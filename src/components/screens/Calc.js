@@ -83,13 +83,13 @@ class Calc extends Component {
         break;
       default:
         return;
-        result = result.toString();
-        this.setState({
-          inputText: result,
-          pendingOperation: null,
-          firstOperand: ""
-        });
     }
+    result = result.toString();
+    this.setState({
+      inputText: result,
+      pendingOperation: null,
+      firstOperand: ""
+    });
   }
 
   render() {
